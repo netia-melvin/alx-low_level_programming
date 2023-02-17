@@ -6,26 +6,23 @@
  */
 int main(void)
 {
-	int d, p;
+	int num1, num2;
 
-	for (d = '0'; d < '9'; d++)
+	for (num1 = 48; num1 < 58; num1++)
 	{
-		for (p = d + 1; p <= '9'; p++)
+		for (num2 = 48; num2 < 58; num2++)
 		{
-			if (p != d)
+			if (num1 < num2)
 			{
-				putchar(d);
-				putchar(p);
-
-				if (d == '8' && p == '9')
-					continue;
-
+				putchar(num1);
+				putchar(num2);
+				if (num1 == 56 && num2 == 57)
+					break;
 				putchar(',');
 				putchar(' ');
 			}
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
