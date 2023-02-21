@@ -1,23 +1,41 @@
-#include "stdio.h"
-#include "main.h
+#include "main.h"
+
 /**
- * times_table - multiplication table
- *
- * Return: nada
- *
+ * times_table - Check description
+ * Description: It prints 9 times table starting with 0
+ * Return: Nothing.
  */
 void times_table(void)
 {
-	int i, j, product;
+	int i, j, n;
 
-	for (i = 48; i <= 57; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (j = 48; j <= 57; j++)
+		for (j = 0; j <= 9; j++)
 		{
-			product = i * j;
-			printf("%d", product);
-			_putchar(',');
-			_putchar(' ');
+			n = i * j;
+
+			if ((n / 10) == 0)
+			{
+				if (j != 0)
+					_putchar(' ');
+				_putchar(n + '0');
+
+				if (j == 9)
+					continue;
+				_putchar(',');
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar((n / 10) + '0');
+				_putchar((n % 10) + '0');
+				if (j == 9)
+					continue;
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
+		_putchar('\n');
 	}
 }
