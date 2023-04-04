@@ -8,14 +8,14 @@
  *
  * Return: The number of elements in the listint_t list.
  */
-size_t listint_len(const listint_t *y)
+size_t listint_len(const listint_t *h)
 {
 	size_t yvonne = 0;
 
-	while (y)
+	while (h)
 	{
 		yvonnes++;
-		y = y->next;
+		h = h->next;
 	}
 
 	return (yvonnes);
