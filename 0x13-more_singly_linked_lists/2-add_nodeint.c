@@ -10,18 +10,18 @@
  * Return: If the function equals to  NULL.
  *         if not, returns the address of the new element.
  */
- listint_t *add_nodeint(listint_t **head, const int n)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *melvins;
+	listint_t *new;
 
-	melvins = malloc(sizeof(listint_t));
-	if (melvins == NULL)
+	new = malloc(sizeof(listint_t));
+	if (new == NULL)
 		return (NULL);
 
-	melvins->n = n;
-	melvins->next = *head;
+	new->n = n;
+	new->next = *head;
 
-	*head = melvins;
+	*head = new;
 
-	return (melvins);
+	return (new);
 }
