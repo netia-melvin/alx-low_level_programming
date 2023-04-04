@@ -4,7 +4,7 @@
  * free_listint2 - Frees a listint_t list.
  * @h: Points to the address of the listint_t list.
  *
- * D: Sets the head to NULL.
+ * @d: Sets the head to NULL.
  */
 void free_listint2(listint_t **head)
 {      
