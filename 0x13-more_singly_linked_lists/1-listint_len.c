@@ -3,14 +3,14 @@
 
 /**
  * listint_len - Returns the number of elements
- *               in a linked listint_t list.
- *  @h:  points to the head of the listint_t list.
+ *               in a singly linked listint_t list.
+ *@h:  points to the head of the listint_t list.
  *
  * Return: The number of elements in the listint_t list.
  */
 size_t listint_len(const listint_t *h)
 {
-	size_t yvonne = 0;
+	size_t yvonnes = 0;
 
 	while (h)
 	{
