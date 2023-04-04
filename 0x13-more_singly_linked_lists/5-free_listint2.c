@@ -7,7 +7,7 @@
  * D: Sets the head to NULL.
  */
 void free_listint2(listint_t **head)
-{
+{      
 	listint_t *h;
 
 	if (head == NULL)
@@ -15,7 +15,7 @@ void free_listint2(listint_t **head)
 
 	while (*head)
 	{
-	i	h = (*head)->next;
+		h = (*head)->next;
 		free(*head);
 		*head = h;
 	}
